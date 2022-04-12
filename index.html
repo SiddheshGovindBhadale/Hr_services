@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- bootstrap css-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <!-- aos css-->
+     <link rel="stylesheet" href="aos/aos.css" />
+     <!-- owl carousel css-->
+     <link rel="stylesheet" href="owl.carousel.min.css">
+     <link rel="stylesheet" href="owl.theme.default.min.css">
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+     <!-- AOS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+     <!-- Glidejs -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css" />
+     
+     <!-- navbar css-->
+     <link href="navbar.css" rel="stylesheet">
+     <!-- service css-->
+     <link href="service.css" rel="stylesheet">
+     <!--hr service css-->
+     <link href="hr services.css" rel="stylesheet">
+     <!-- team css-->
+     <link href="ourteam.css" rel="stylesheet">
+     <!-- testimonial css-->
+     <link href="testimonial1.css" rel="stylesheet">
+     <!-- footer css -->
+     <link href="footer.css" rel="stylesheet">
+
+     <title>Hr Services</title>
+     <style type="text/css">
+          .Header {
+               width: 90vw !important;
+          }
+
+
+          .service li {
+               list-style: disc;
+          }
+
+          .font {
+               font-family: "Poppins", sans-serif !important;
+          }
+
+
+          .Header h4 span {
+               color: red !important;
+          }
+
+          .child1 {
+               border: 2px solid black;
+               width: 100%;
+               padding: 10px 10px;
+               margin: 5px auto;
+               border-radius: 5px;
+          }
+
+          @media(min-width:768px) {
+               .boxes {
+                    display: flex;
+                    flex-direction: column;
+               }
+
+               .child1 {
+                    margin: 10px 0px;
+                    font-size: 1.2rem;
+               }
+
+               .i1 {
+                    width: 280px;
+               }
+
+               .i2 {
+                    width: 280px;
+                    align-self: center;
+               }
+
+               .i3 {
+                    width: 280px;
+                    align-self: flex-end;
+               }
+          }
+
+
+
+          .child {
+               display: flex;
+               align-item: center;
+               justify-content: center;
+               flex-direction: column;
+          }
+
+          .child .q-item {
+               border: 2px solid black;
+               background-color: white;
+               width: 100%;
+               padding: 10px 10px;
+               margin: 5px auto;
+               max-width: 280px;
+               border-radius: 5px;
+          }
+
+          @media(min-width:768px) {
+               .child {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+
+               }
+
+               .one {
+                    justify-content: center;
+                    padding: 0px 55px;
+               }
+
+               .two {
+                    justify-content: space-between;
+                    padding:  0px 45px;
+               }
+
+               .three {
+                    justify-content: space-between;
+                    padding: 0px 35px;
+               }
+
+               .four {
+                    justify-content: space-between;
+                    padding: 0px 25px;
+               }
+
+               .five {
+                    justify-content: space-between;
+               }
+
+          }
+
+          @media(min-width:1000px) {
+               .child {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    text-align: center;
+               }
+
+               .one {
+                    justify-content: center;
+                    padding: 0px 180px;
+               }
+
+               .two {
+                    justify-content: space-between;
+                    padding: 0px 150px;
+               }
+
+               .three {
+                    justify-content: space-between;
+                    padding: 0px 120px;
+               }
+
+               .four {
+                    justify-content: space-between;
+                    padding: 0px 60px;
+               }
+
+               .five {
+                    justify-content: space-between;
+               }
+
+          }
+
+
+          #teams {
+               background-color: #2c3c61;
+          }
+
+          .team {
+               color: #fff;
+               background-color: none;
+               padding: 0.625rem;
+               padding-left: 0px !important;
+               padding-right: 0px !important;
+               text-align: center;
+               border-radius: 1rem;
+               transition: all 300ms ease-in-out;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+          }
+
+          .t {
+               width: 16.875rem;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               flex-direction: column;
+               padding: 17px 15px;
+               border-radius: 10px;
+               background-color: #151A33;
+          }
+
+          #testimonial {
+               background: black;
+          }
+
+          .team .img-cover {
+               overflow: hidden;
+               height: 15rem;
+               width: 15rem;
+               margin: 0 0;
+               transition: all 300ms ease-in-out;
+               border-radius: 5px;
+
+          }
+
+          .team .img-cover img {
+               height: 100%;
+               width: 100%;
+          }
+          
+          .team .profile{
+          height:0px;
+          width: 240px;
+          transition: all .3s linear;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          position:absolute;
+          overflow:hidden;
+          z-index:1;
+          background:black;
+          }
+          
+          .team:hover .profile {
+          height:240px;
+          }
+
+          .container {
+               padding-bottom: 40px;
+               max-width: 114rem;
+               overflow:visible;
+     
+          }
+          
+          @media only screen and (min-width: 950px) {
+          .container {
+          padding: 0 3rem;
+          }
+          }
+     </style>
+</head>
+
+<body>
+     <!-- Navigation -->
+     <nav class="nav">
+     <div class="navigation">
+     <div class="logo">
+     <img src="Logo.png">
+     </div>
+     
+     <div class="menu">
+     <div class="top-nav">
+     <div class="logo">
+     <img src="Logo.png">
+     </div>
+     <div class="close">
+     <i class="fas fa-times"></i>
+     </div>
+     </div>
+     
+     <ul class="nav-list">
+     <li class="nav-item">
+     <a href="index.html" class="nav-link "><b>Home</b></a>
+     </li>
+     <li class="nav-item">
+     <a href="hr service.html" class="nav-link "><b>HR Services</b></a>
+     </li>
+     <li class="nav-item">
+     <a href="hygiene.html" class="nav-link "><b>Hygiene & Environment</b></a>
+     </li>
+     <li class="nav-item">
+     <a href="assessoris.html" class="nav-link "><b>Innovation & Product</b></a>
+     </li>
+     <li class="nav-item">
+     <a href="contact.html" class="nav-link "><b>Contact us</b></a>
+     </li>
+     </ul>
+     </div>
+     
+     <div class="hamburger">
+     <i class="fas fa-bars"></i>
+     </div>
+     </div>
+     </nav>
+     
+     
+     
+     
+     <!--header section-->
+     <section id="Hr-hero" class="center">
+          <div class="slider-area d-flex align-items-center">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-lg-12">
+                              <div class="Header">
+                                   <h4 data-aos="fade-up" data-aos-delay="300" style="color:#bf263a;">hr services</h4>
+                                   <h1 data-aos="fade-up" data-aos-delay="500">We build your</h1>
+                                   <h1 data-aos="fade-up" data-aos-delay="500">dream team</h1>
+                                   <h4 class="font" data-aos="fade-up" data-aos-delay="900">Qubic India Is Expertized In
+                                        <span id="type1"></span></h4>
+                                   <h4 class="font" data-aos="fade-up" data-aos-delay="900"> recruitment</h4>
+                                   <div class="batn" data-aos="fade-up" data-aos-delay="1100">
+                                        <a href="#about" data-aos="fade-up" data-aos-delay="1400">Learn More</a>
+                                        <a href="#" style="background-color:var(--red)" data-aos="fade-up"
+                                             data-aos-delay="1700">Contact Us</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="curve">
+               <img src="slider-1.png">
+          </div>
+     </section>
+
+     <!--about section-->
+     <section id="about">
+          <div class="dreamit-about-area pt-95 pb-70">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-lg-6 col-md-6 " data-aos="zoom-in">
+                              <div class="dreamit-about-thumb tilt-effect">
+                                   <img class="tilt-effect" src="about.jpg" alt="">
+                              </div>
+                              <div class="dreamit-single-about-counter alltuchtopdown ">
+                                   <div class="about-counter-text-inner center">
+                                        <h1><span class="counter">10</span> <span>+</span></h1>
+                                        <div class="about-counter-title">
+                                             <h3>Years of</h3>
+                                             <h3>Experience</h3>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-6 col-md-6 pl-35">
+                              <div class="dreamit-bar-thumb">
+                                   <img src="human-resources.png" alt="">
+                              </div>
+
+                              <div class="dreamit-section-title pb-30">
+                                   <div class="dreamit-section-sub-title">
+                                        <h5>About Our Company</h5>
+                                   </div>
+                                   <div class="dreamit-section-main-title">
+                                        <h3>We are the best HR</h3>
+                                        <h2>Services <span>Provider</span></h2>
+                                   </div>
+                                   <div class="dreamit-section-text mt-15">
+                                        <p>For us relationship matters whether it is business or candidate sourcing we
+                                             prioritize quality time, building
+                                             reliable relations</p>
+                                   </div>
+                                   <div class="dreamit-about-content d-flex pt-3">
+                                        <div class="about-icon">
+                                             <img src="checked.png">
+                                        </div>
+                                        <div class="about-content-text">
+                                             <p>We hire HR professionals who take pride in doing excellent work and in
+                                                  exceeding expectations.</p>
+                                        </div>
+                                   </div>
+                                   <div class="dreamit-about-content d-flex">
+                                        <div class="about-icon">
+                                             <img src="checked.png">
+                                        </div>
+                                        <div class="about-content-text">
+                                             <p>We as a team carefully screen all our potential candidates so you can be
+                                                  assured that your organisation receive
+                                                  highest quality profiles.</p>
+                                        </div>
+                                   </div>
+                                   <div class="dreamit-about-content d-flex">
+                                        <div class="about-icon">
+                                             <img src="checked.png">
+                                        </div>
+                                        <div class="about-content-text">
+                                             <p>Your time is precious, and we understand that you require the best
+                                                  quality resources in shortest time span.</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!--service section-->
+          <div class="service py-5">
+               <div class="container-fluid">
+                    <div class="row">
+                         <div class="col-md-10 col-11 mx-auto">
+                              <div class="title">
+                                  <h1>Services</h1>
+                              </div>
+                              <div class="row ">
+                                   <!-- left side data -->
+                                   <div class="col-md-6 mt-md-2 m-0">
+                                        <div class="dreamit-section-sub-title">
+                                             <h5>What We Do</h5>
+                                        </div>
+                                        <div class=" mt-3">
+                                             <h6 class="font-weight-medium"><b>QUBIC APPROACH</b></h6>
+                                             <p style="margin-bottom:5px !important;">
+                                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For us relationship
+                                                  matters whether it is business or candidate sourcing we prioritize
+                                                  quality time, building reliable relations</b>
+                                             <p style="margin-bottom:5px !important;">
+                                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our team based
+                                                  approach and efficiency to get tasks done on time and on budget makes
+                                                  a
+                                                  significant impact to the overall mode of operation.</p>
+                                             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flexibility in
+                                                  responding to changing requirements, sensitive and awareness of the
+                                                  need to
+                                                  control change and the impact on costs of our clients expectations
+                                                  makes us more versatile
+                                                  reliable partners competing others.</p>
+                                        </div>
+                                        <h4>Qubic India is expertized in</h4>
+                                        <h6 class="font-weight-light subtitle">Managing enterprise solutions for
+                                             business with premier and reliable resource support for Junior, mid &
+                                             Senior level
+                                             recruitments into the most Niche Domains Of Healthcare, Engineering , IT &
+                                             Non IT Domains </h6>
+                                        <!-- one more grid sys for services -->
+                                        <div class="row mt-md-5">
+                                             <div class="col-md-6 mt-3">
+                                                  <h6 class="font-weight-medium d-flex justify-content-start">
+                                                       <li></li>HEALTHCARE
+                                                  </h6>
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                  <h6 class="font-weight-medium d-flex justify-content-start">
+                                                       <li></li>ENGINEERING & INFRASTRUCTURE
+                                                  </h6>
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                  <h6 class="font-weight-medium d-flex justify-content-start">
+                                                       <li></li>GAMING INDUSTRY
+                                                  </h6>
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                  <h6 class="font-weight-medium d-flex justify-content-start">
+                                                       <li></li>OIL & GAS
+                                                  </h6>
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                  <h6 class="font-weight-medium d-flex justify-content-start">
+                                                       <li></li>SOFTWARE PROFESSIONALS (IT)
+                                                  </h6>
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                  <h6 class="font-weight-medium d-flex justify-content-start">
+                                                       <li></li>NON IT
+                                                  </h6>
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                  <h6 class="font-weight-medium d-flex justify-content-start">
+                                                       <li></li>NICHE HIRING
+                                                  </h6>
+                                             </div>
+
+                                        </div>
+                                        <div class=" mt-3">
+                                             <h6 class="font-weight-medium" style=" width:245px; margin-top:40px;">
+                                                  <b>RECRUITMENT & RESOURCING</b></h6>
+                                             <h6 class="font-weight-medium " style="margin-left:35px; margin-top:20px;">
+                                                  <span style="margin-right:6px;">&#10146;</span> PERM (ONE TIME) HIRING
+                                             </h6>
+                                             <h6 class="font-weight-medium "
+                                                  style="margin-left:35px; margin-bottom:30px;"><span
+                                                       style="margin-right:6px;">&#10146;</span> TEMP (CONTRACT)
+                                                  STAFFING</h6>
+                                        </div>
+                                   </div>
+
+                                   <!-- right side data -->
+                                   <div class="col-md-6 mt-md-5 m-0">
+                                        <div class="row wrap-service">
+                                             <!-- left side images -->
+                                             <div class="col-md-6">
+                                                  <div class="row">
+                                                       <div class="col-md-12 img-hover mb-4">
+                                                            <img alt="ux" class="rounded img-shadow img-fluid"
+                                                                 src="Healthcare.jpg"
+                                                                 data-aos="fade-right" />
+                                                       </div>
+                                                       <div class="col-md-12 img-hover mb-4">
+                                                            <img alt="ux" class="rounded img-shadow img-fluid"
+                                                                 src="IT and Non IT.jpg"
+                                                                 data-aos="fade-left" />
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             <!-- right side images -->
+                                             <div class="col-md-6 uneven-box">
+                                                  <div class="row">
+                                                       <div class="col-md-12 img-hover mb-4">
+                                                            <img alt="ux" class="rounded img-shadow img-fluid"
+                                                                 src="oil and gas.jpg"
+                                                                 data-aos="fade-right" />
+                                                       </div>
+                                                       <div class="col-md-12 img-hover mb-4">
+                                                            <img alt="ux" class="rounded img-shadow img-fluid"
+                                                                 src="niche hiring.jpg"
+                                                                 data-aos="fade-left" />
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+
+
+          <section id="about">
+               <div class="dreamit-about-area pt-95 pb-70">
+                    <div class="container">
+                         <div class="row">
+                              <div class="col-lg-6 col-md-6 pl-35">
+                                   <div class="dreamit-bar-thumb">
+                                        <img src="human-resources.png" alt="">
+                                   </div>
+
+                                   <div class="dreamit-section-title pb-30">
+                                        <div class="dreamit-section-sub-title">
+                                             <h5>WHY CHOOSE US</h5>
+                                        </div>
+                                        <div class="dreamit-section-main-title">
+                                             <h3>Why You Choose</h3>
+                                             <h2>Our <span>Services</span></h2>
+                                        </div>
+                                        <div class="dreamit-section-text mt-15">
+                                             <p>Our mission is not only to meet your expectations but to exceed them, we
+                                                  also provide many more unique value
+                                                  addition to your requirement resourcing process.</p>
+                                        </div>
+                                        <div class="dreamit-about-content d-flex pt-3">
+                                             <div class="about-icon">
+                                                  <img src="handshake.png">
+                                             </div>
+                                             <div class="about-content-text">
+                                                  <div class="dreamit-section-main-title mb-2">
+                                                       <h2> We Are Committed</h2>
+                                                  </div>
+                                                  <p>Our team is committed on a <strong>CUSTOMISED</strong> recruitment
+                                                       approach with <strong>PERSONALIZED</strong> candidate and client
+                                                       interaction.</p>
+                                             </div>
+                                        </div>
+                                        <div class="dreamit-about-content d-flex">
+                                             <div class="about-icon">
+                                                  <img src="rating.png">
+                                             </div>
+                                             <div class="about-content-text">
+                                                  <div class="dreamit-section-main-title mb-2">
+                                                       <h2>Customer Focused Reviews</h2>
+                                                  </div>
+                                                  <p>Be Assured of <strong>QUALITY</strong> &
+                                                       <strong>RELIABILITY</strong> of both candidate and our services.
+                                                  </p>
+                                             </div>
+                                        </div>
+                                        <div class="dreamit-about-content d-flex">
+                                             <div class="about-icon">
+                                                  <img src="24-hours.png">
+                                             </div>
+                                             <div class="about-content-text">
+                                                  <div class="dreamit-section-main-title mb-2">
+                                                       <h2>Unlimited Support</h2>
+                                                  </div>
+                                                  <p>Your time is precious, we understand and respect your time with
+                                                       utmost quality resourcing support.</p>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 ">
+                                   <div class="dreamit-about-thumb tilt-effect">
+                                        <img class="tilt-effect" src="IMG_20211121_045450.jpg"
+                                             alt="">
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+
+               <section style="background-color:#eff2f7;">
+                    <section>
+                         <div class="dreamit-about-area pt-95 mt-8">
+                              <div class="container">
+                                   <div class="row">
+                                        <div class=" pl-35">
+                                             <div class="dreamit-section-title pb-30">
+                                                  <div class="dreamit-section-sub-title">
+                                                       <h5>Qubic India HR Incubation-</h5>
+                                                  </div>
+                                                  <div class="dreamit-section-main-title">
+                                                       <h3>For Start-up’s & Micro</h3>
+                                                       <h2>Corporates</h2>
+                                                  </div>
+                                                  <div class=" mt-4">
+                                                       <h6 class="font-weight-medium"><b>QUBIC INDIA – HR AS
+                                                                 SERVICES</b></h6>
+                                                       <p style="margin-bottom:5px !important;">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is an
+                                                            innovative Quick HR Approach with our QHIC Services (Qubic
+                                                            HR Incubation Centre) with a Vision is to
+                                                            help incubate the growth of Start-Ups/SME/Micro-Corporates
+                                                            with maximized HR functionary Support that is Cost
+                                                            Minimal, Efficient, Professional but with a Personal
+                                                            Approach and an advantage of Scalable Ecosystem for
+                                                            Expansion.
+                                                       </p>
+                                                       <p style="margin-bottom:5px !important;">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q-HIC
+                                                            Solutions Specializes in these Unique Challenges that
+                                                            enables a very cost effective solution. Qubic India’s Q-
+                                                            HIC Solutions provides with a comprehensive solution to help
+                                                            business offload non- core operational aspects at an
+                                                            affordable cost. It’s an affordable model created to enable
+                                                            a small and medium size business scale up with minimum
+                                                            operational overhead. We provide with an ecosystem to manage
+                                                            entire back office operation e.g. sourcing,
+                                                            screening, hiring, general HR, Policy, Statutory Compliance
+                                                            , payroll, technical interviews and the like.
+                                                       </p>
+                                                       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At Qubic India
+                                                            we define a model to leverage our resources and expertise
+                                                            across the board with all the clients where
+                                                            you may not need a full-time employment to address your
+                                                            needs. Ecosystem can be further customized to cater to
+                                                            specific client requirement.
+                                                       </p>
+                                                  </div>
+                                                  <div class="container boxes" style="max-width:730px;">
+                                                       <div class="child1 i1 " style="background-color:#00af50;"
+                                                            data-aos="fade-right">
+                                                            Entrepreneurs/Start-ups
+                                                       </div>
+                                                       <div class="child1 i2" style="background-color:#ffc000"
+                                                            data-aos="fade-left">
+                                                            Small & Medium Enterprise
+                                                       </div>
+                                                       <div class="child1 i3"
+                                                            style="background-color:#0071c0; color:white;"
+                                                            data-aos="fade-right">
+                                                            Micro- Corporates
+                                                       </div>
+                                                       <div class="child1" style="background-color:#91d04f;"
+                                                            data-aos="fade-left">
+                                                            Slash 45%-65% on conventional HR Cost
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </section>
+
+                    <div style="background-color:#eff2f7; padding:40px 0px;">
+                         <div class="container" id="Qhic">
+                              <div class="mt-2 mb-3 text-center">
+                                   <h3 class="service_heading">Q-HIC Services</h3>
+                              </div>
+                              <div class="mb-3" style="background:red; width:100%; height:2px;"></div>
+
+                              <div class=" one child">
+                                   <div class="q-item" data-aos="fade-right"><b>Comprehensive HR solutions</b></div>
+                                   <div class=" q-item" data-aos="fade-left"><b>Senior HR Expert Panel</b></div>
+                              </div>
+                              <div class=" two child">
+                                   <div class=" q-item" data-aos="fade-right"><b>Policy Generation & Implementation</b>
+                                   </div>
+                                   <div class=" q-item" data-aos="fade-left"><b>Statutory Compliance</b> </div>
+                              </div>
+                              <div class=" child three">
+                                   <div class="q-item" data-aos="fade-right"><b>Sourcing & Recruitment</b></div>
+                                   <div class="q-item" data-aos="fade-left"><b>Routine HR advisory support</b></div>
+                              </div>
+                              <div class=" child four">
+                                   <div class=" q-item" data-aos="fade-right"><b>Payroll Management</b></div>
+                                   <div class=" q-item" data-aos="fade-left"><b>Annual Appraisal by experts</b></div>
+                              </div>
+                              <div class=" child five">
+                                   <div class="q-item" data-aos="fade-right"><b>Legal Panel Support</b></div>
+                                   <div class=" q-item" data-aos="fade-left"><b>Dedicated In-house HR Executive</b>
+                                   </div>
+                              </div>
+                              <div class=" child six">
+                                   <div class=" q-item" data-aos="fade-right"><b>Software/App Based support</b></div>
+                              </div>
+                         </div>
+                    </div>
+
+               </section>
+
+
+               <!-- Teams -->
+               <section class="section theme" id="teams">
+               <div class="title">
+               <h1 style="color:white;">Our Team</h1>
+               </div>
+               
+               <div class="teams-center container" >
+               <div class="glide">
+               <div class="glide__track" data-glide-el="track">
+               <ul class="glide__slides">
+               <li class="glide__slide">
+               <div class="team">
+               <div class="t">
+               <div class="img-cover">
+               <div class="profile">
+               <a class="button" data-bs-toggle="modal"
+               href="#portfolioModal2">more</a>
+               </div>
+               <img src="Page-2-Image-2.jpg" alt="" />
+               </div>
+               <h3>Mr Sendil Kumar S</h3>
+               <p>Founder</p>
+               <p>Qubic India</p>
+               </div>
+               </div>
+               </li>
+               <li class="glide__slide">
+               <div class="team">
+               <div class="t">
+               <div class="img-cover">
+               <div class="profile">
+               <a class="button" data-bs-toggle="modal"
+               href="#portfolioModal1">more</a>
+               </div>
+               <img src="Page-1-Image-1.png" alt="" />
+               </div>
+               <h3>Ms Patricia</h3>
+               <p>Principal HR Consultant</p>
+               <p>Start-up & Incubation</p>
+               </div>
+               </div>
+               </li>
+               <li class="glide__slide">
+               <div class="team">
+               <div class="t">
+               <div class="img-cover">
+               <div class="profile">
+               <a class="button" data-bs-toggle="modal"
+               href="#portfolioModal3">more</a>
+               </div>
+               <img src="Page-3-Image-3.png" alt="" />
+               </div>
+               <h3>Ms Veena</h3>
+               <p>Head HR Ops & Recruitment</p>
+               <p style="color: transparent;">Ms Veena</p>
+               </div>
+               </div>
+               </li>
+               <li class="glide__slide">
+               <div class="team">
+               <div class="t">
+               <div class="img-cover">
+               <div class="profile">
+               <a class="button" data-bs-toggle="modal"
+               href="#portfolioModal4">more</a>
+               </div>
+               <img src="Page-4-Image-4.png" alt="" />
+               </div>
+               <h3>Ms Sumalatha</h3>
+               <p>Accounts & Project Coordinator</p>
+               <p style="color: transparent;">Ms Sumalatha</p>
+               <p></p>
+               </div>
+               </div>
+               </li>
+               <li class="glide__slide">
+               <div class="team">
+               <div class="t">
+               <div class="img-cover">
+               <div class="profile">
+               <a class="button" data-bs-toggle="modal"
+               href="#portfolioModal5">more</a>
+               </div>
+               <img src="Page-5-Image-5.png" alt="" />
+               </div>
+               <h3 style="font-size:1.5rem;">Mr Manoj Kumar Roy- LLM</h3>
+               <p>(High Court Advocate)</p>
+               <p>Corporate Legal Expert</p>
+               </div>
+               </div>
+               </li>
+               </ul>
+               </div>
+               </div>
+               </div>
+               </section>
+
+
+
+
+               <!-- Testimonial -->
+               <div class="testimonial container">
+               <div class="row">
+               <div class="col-md-8 col-center m-auto">
+               <div class="title">
+               <h1>Testimonials</h1>
+               </div>
+               <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+               <!-- Carousel -->
+               <div class="carousel-inner">
+               <div class="item carousel-item active">
+               <div class="img-box"><img src="https://i.ibb.co/d5DY64w/img1.jpg" alt=""></div>
+               <p class="testimonial2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+               <p class="overview"><b>Jennifer Smith</b>, Office Worker</p>
+               </div>
+               <div class="item carousel-item">
+               <div class="img-box"><img src="https://i.ibb.co/5FF1vqz/img2.jpg" alt=""></div>
+               <p class="testimonial2">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+               <p class="overview"><b>Dauglas McNun</b>, Financial Advisor</p>
+               </div>
+               <div class="item carousel-item">
+               <div class="img-box"><img src="https://i.ibb.co/Trv7hDv/img3.jpg" alt=""></div>
+               <p class="testimonial2">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
+               <p class="overview"><b>Hellen Wright</b>, Athelete</p>
+               </div>
+               </div>
+               <!-- Carousel Controls -->
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+               <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" style="color: black;" >
+               <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+               <span class="visually-hidden">Next</span>
+               </button>
+               
+               
+               </div>
+               </div>
+               </div>
+               </div>
+
+
+
+               <!-- footer -->
+               <footer>
+               <div class="main-content">
+               
+               <!-- about -->
+               <div class="left box">
+               <h2>About us</h2>
+               <div class="content">
+               <p>Qubic India is a team of entrepreneurial professionals with a vision aiming to explore
+               innovations in business relations that exceeds more than business.</p>
+               <div class="social">
+               <a href="#"><span class="fab fa-facebook-f"></span></a>
+               <a href="#"><span class="fab fa-twitter"></span></a>
+               <a href="#"><span class="fab fa-instagram"></span></a>
+               <a href="#"><span class="fab fa-youtube"></span></a>
+               </div>
+               </div>
+               </div>
+               
+               <!-- address -->
+               <div class="meddle box">
+               <h2>Address</h2>
+               <div class="content">
+               <div class="place">
+               <span class="fas fa-map-marker-alt"></span>
+               <span class="text">#84 Ist Main Road, Nagappa Reddy Layout, Kaggadaspura, CV Raman
+               Nagar,Bengaluru, Karnataka 560093</span>
+               </div>
+               <div class="phone">
+               <span class="fas fa-phone-alt"></span>
+               <span class="text">080951 78797</span>
+               </div>
+               <div class="email">
+               <span class="fas fa-envelope"></span>
+               <span class="text e-mail" data-user="ofni" data-website="moc.aidnicibuq"></span>
+               </div>
+               </div>
+               </div>
+               
+               <!-- quick links -->
+               <div class="right box">
+               <h2>Quick Links</h2>
+               <div class="content">
+               <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="hr service.html">HR Services</a></li>
+               <li><a href="hygiene.html">Hygiene & Environment</a></li>
+               <li><a href="assessoris.html">Innovation & Product</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
+               </ul>
+               </div>
+               </div>
+               </div>
+               <div class="bottom">
+               <center>
+               <span class="far fa-copyright"></span><span> 2010-2021 Qubic India All rights reserved.</span>
+               </center>
+               </div>
+               </footer>
+               
+               
+               
+               
+               
+               <div class="teamPortfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+               <div class="modal-dialog .modal-fullscreen">
+               <div class="modal-content">
+               <!--<a href="#!"  class="close-modal" data-bs-dismiss="modal"><img src="img/icon/close-icon.svg" alt="Close modal" style="border:2px solid black;" /></a>-->
+               <div class=" container">
+               <div class="row justify-content-center">
+               <div class="">
+               <div class="modal-body">
+               <section class=" about" id="about">
+               <div class="about-center container">
+               <div class="col-md-12 img-hover left">
+               <img alt="ux" class="rounded img-shadow img-fluid" src="Page-1-Image-1.png" data-aos="fade-right" data-aos-duration="2000" />
+               </div>
+               <div class="right" data-aos="fade-left" data-aos-duration="2000">
+               <ul class="list-inline" style=" margin-bottom:2rem !important; ">
+               <h1>
+               <strong>Ms Patricia</strong>
+               </h1>
+               <li>
+               <strong>Principal HR Consultant</strong>
+               </li>
+               <li>
+               <strong>Start-up & Incubation</strong>
+               </li>
+               </ul>
+               <p>
+               Industry veteran with an eye for detail and 30 Plus years of
+               cross-industry domain expertise in:
+               Learning and Development through Coaching and Mentoring,
+               HR Strategy, Resource Management and
+               Competency Mapping
+               Certified Master Practitioner in Neuro-Linguistic
+               Programming (NLP)
+               Mentor-cum-Coach in Interpersonal Skills, Human Growth,
+               Effective Communication and
+               Emotional Intelligence (with the renowned NLP/Gestalt
+               practitioner and trainer, Late Oriol Pujol)
+               Program Developer/Mentor, “The Noronha College of Business
+               and General Education” -
+               Secretarial & Commercial skills, Business English and Spoken
+               English (ESOL) leading to
+               Pitman Examination Institute, London Certificate
+               Postgraduate in Personnel Management and Industrial
+               Relations (St Joseph’s College of
+               Business Administration, Bangalore, India) and Graduate
+               Degree in Arts (Economics, Political
+               Science, Sociology) - St Joseph’s College, Bangalore, India.
+               </p>
+               <p>
+               Human Resource Consulting, Advisory Services for start-up
+               and mid-size companies The
+               Tamara Leisure Resorts, Pharmaleaf India Pvt Ltd, ANSR
+               Consulting, Target Corporation,
+               Repton International Schools, Bangalore, Westbridge Capital
+               Advisors, IBM, Alain Charles
+               Publishing Ltd, BG Hospitals.
+               Corporate HR stints - Wipro Infotech Ltd, Mac Dowell’s Ltd,
+               and The Guest line Hotel (Mahindra
+               Group)
+               </p>
+               <a href="#" class="mybtn btn-xl text-uppercase"
+               data-bs-dismiss="modal" type="button">Back</a>
+               </div>
+               </div>
+               </section>
+               </div>
+               </div>
+               </div>
+               </div>
+               </div>
+               </div>
+               </div>
+               
+               
+               <div class="teamPortfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+               <div class="modal-dialog .modal-fullscreen">
+               <div class="modal-content">
+               <!--<div class="close-modal" data-bs-dismiss="modal"><img src="img/icon/close-icon.svg"
+               alt="Close modal" /></div>-->
+               <div class="container ">
+               <div class="row justify-content-center">
+               <div class="">
+               <div class="modal-body">
+               <section class=" about" id="about">
+               <div class="about-center container">
+               <div class="col-md-12 img-hover left">
+               <img alt="ux" class="rounded img-shadow img-fluid"
+               src="Page-2-Image-2.jpg" data-aos="fade-right"
+               data-aos-duration="2000" />
+               </div>
+               <div class="right" data-aos="fade-left" data-aos-duration="2000">
+               <ul class="list-inline" style=" margin-bottom:2rem !important; ">
+               <h1>
+               <strong>Mr Sendil Kumar S</strong>
+               </h1>
+               <li>
+               <strong>Founder</strong>
+               </li>
+               <li>
+               <strong>Qubic India</strong>
+               </li>
+               </ul>
+               <p>
+               Sendil Kumar S- MBA (University of Pune) an <b>Ex- defence
+               professional</b>, with 30 yrs of cross
+               domain expertize. Holds profound Entrepreneurial expertize
+               which includes core Recruitment,
+               HR practices & Operations. Have been on the verge of
+               entrepreneurial success through
+               recruitment domain since 2011 as Qubic India. And have
+               attributed breakthroughs in
+               recruitment business adhering innovative approach to the
+               recruitment needs of varied
+               industry domains.
+               </p>
+               <p>
+               The prime focus of Qubic HR Incubation pertains to catering
+               SME’s , Start-Up’s & Micro
+               Corporates, that are more challenging to close on, owing to
+               unknown terrain where the
+               resource needs are too Specific, Niche and personal.
+               </p>
+               <p>
+               He has contained his extra expertize with add-on’s of
+               <b>Environment & Hygiene along with
+               Procurement & Products</b>. The multi-faceted
+               professional experience makes him tough in his
+               strategic & tactical approach.
+               </p>
+               <p>
+               RECRUITMENT EXPERT & A BUDDING ENTREPRENEUR!!
+               </p>
+               <a href="#" class="mybtn btn-xl text-uppercase"
+               data-bs-dismiss="modal" type="button">Back</a>
+               </div>
+               </div>
+               </section>
+               </div>
+               </div>
+               </div>
+               </div>
+               </div>
+               </div>
+               </div>
+               
+               
+               <div class="teamPortfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+               <div class="modal-dialog .modal-fullscreen">
+               <div class="modal-content">
+               <!--<div class="close-modal" data-bs-dismiss="modal"><img src="img/icon/close-icon.svg"
+               alt="Close modal" /></div>-->
+               <div class="container ">
+               <div class="row justify-content-center">
+               <div class="">
+               <div class="modal-body">
+               <section class=" about" id="about">
+               <div class="about-center container">
+               <div class="col-md-12 img-hover left">
+               <img alt="ux" class="rounded img-shadow img-fluid"
+               src="Page-3-Image-3.png" data-aos="fade-right"
+               data-aos-duration="2000" />
+               </div>
+               <div class="right" data-aos="fade-left" data-aos-duration="2000">
+               <ul class="list-inline" style=" margin-bottom:2rem !important; ">
+               <h1>
+               <strong>Ms Veena</strong>
+               </h1>
+               <li>
+               <strong>Head HR Ops & Recruitment</strong>
+               </li>
+               </ul>
+               <p>
+               Experience of 12 plus years into gamut of Human resources.
+               managed end to end HR activities,
+               handled people integration, Managed talent Management,
+               employee engagement, employee
+               relations , HR Operations, retention strategy and many other
+               aspects of HR.
+               Elegant operational professional for smooth
+               client-candidate-team coordination.
+               Strong Task Master for an effective Team Handling.
+               </p>
+               <a href="#" class="mybtn btn-xl text-uppercase"
+               data-bs-dismiss="modal" type="button">Back</a>
+               </div>
+               </div>
+               </section>
+               </div>
+               </div>
+               </div>
+               </div>
+               </div>
+               </div>
+               </div>
+               
+               <div class="teamPortfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+               <div class="modal-dialog .modal-fullscreen">
+               <div class="modal-content">
+               <!--<div class="close-modal" data-bs-dismiss="modal"><img src="img/icon/close-icon.svg"
+               alt="Close modal" /></div>-->
+               <div class="container ">
+               <div class="row justify-content-center">
+               <div class="">
+               <div class="modal-body">
+               <section class=" about" id="about">
+               <div class="about-center container">
+               <div class="col-md-12 img-hover left">
+               <img alt="ux" class="rounded img-shadow img-fluid"
+               src="Page-4-Image-4.png" data-aos="fade-right"
+               data-aos-duration="2000" />
+               </div>
+               <div class="right" data-aos="fade-left" data-aos-duration="2000">
+               <ul class="list-inline" style=" margin-bottom:2rem !important; ">
+               <h1>
+               <strong>Ms Sumalatha</strong>
+               </h1>
+               <li>
+               <strong>Accounts & Project Coordinator</strong>
+               </li>
+               </ul>
+               <p>
+               A flare for perfection and creativity nurtures her 6+ yrs
+               into Accounts and currently getting
+               engaged with upcoming Environment based community initiative
+               project. These projects are
+               deemed for sure welcome within our community. Her
+               contributions acclaim interior designs and
+               respective environment friendly initiatives.
+               </p>
+               <p>
+               An obsessive perfectionist!!
+               </p>
+               <a href="#" class="mybtn btn-xl text-uppercase"
+               data-bs-dismiss="modal" type="button">Back</a>
+               </div>
+               </div>
+               </section>
+               </div>
+               </div>
+               </div>
+               </div>
+               </div>
+               </div>
+               </div>
+               
+               <div class="teamPortfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+               <div class="modal-dialog .modal-fullscreen">
+               <div class="modal-content">
+               <!--<div class="close-modal" data-bs-dismiss="modal"><img src="img/icon/close-icon.svg"
+               alt="Close modal" /></div>-->
+               <div class="container ">
+               <div class="row justify-content-center">
+               <div class="">
+               <div class="modal-body">
+               <section class=" about" id="about">
+               <div class="about-center container">
+               <div class="col-md-12 img-hover left">
+               <img alt="ux" class="rounded img-shadow img-fluid"
+               src="Page-5-Image-5.png" data-aos="fade-right"
+               data-aos-duration="2000" />
+               </div>
+               <div class="right" data-aos="fade-left" data-aos-duration="2000">
+               <ul class="list-inline" style=" margin-bottom:2rem !important; ">
+               <h1>
+               <strong>Mr Manoj Kumar Roy- LLM</strong>
+               </h1>
+               <li>
+               <strong>(High Court Advocate)</strong>
+               </li>
+               <li>
+               <strong>Corporate Legal Expert</strong>
+               </li>
+               </ul>
+               <p>
+               A Strong Legal professional who has
+               achieved accolades in legal fraternity
+               and a Right hand to Our Legal affairs all through.
+               </p>
+               <p>
+               He has contributed his high hand, handling our contract &
+               payment disputes with a tough hand.
+               </p>
+               <a href="#" class="mybtn btn-xl text-uppercase"
+               data-bs-dismiss="modal" type="button">Back</a>
+               </div>
+               </div>
+               </section>
+               </div>
+               </div>
+               </div>
+               </div>
+               </div>
+               </div>
+               </div>
+               
+               
+               <!-- AOS -->
+               <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+               <!-- Typeit -->
+               <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+               <!-- GSAP -->
+               <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+               <!-- Glidejs -->
+               <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+               <!-- bootstrap JavaScript file -->
+               <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+               <!-- navbar JavaScript file -->
+               <script src="navbar.js"></script>
+
+               <!-- aos JavaScript file -->
+               <script src="aos.js"></script>
+               <script>
+                    AOS.init(
+                         {
+                              offset: 120,
+                              duration: 1000
+                         }
+                    );
+               </script>
+
+               <script type="text/javascript">
+
+
+                    const glide = document.querySelector(".glide");
+                    if (glide)
+                         new Glide(glide, {
+                              type: "carousel",
+                              startAt: 0,
+                              perView: 3,
+                              gap: 10,
+                              hoverpause: true,
+                              autoplay: 4000,
+                              animationDuration: 800,
+                              focusAt: 'center',
+                              animationTimingFunc: "cubic-bezier(0.165, 0.840, 0.440, 1.000)",
+                              breakpoints: {
+                                   996: {
+                                        perView: 3,
+                                   },
+                                   768: {
+                                        perView: 1,
+                                   },
+                              },
+                         }).mount();
+               </script>
+
+               
+
+               <!-- owl carousel file -->
+               <script src="docsjquery.min.js"></script>
+               <script src="OwlCarousel/dist/owl.carousel.min.js"></script>
+
+               <script type="text/javascript">
+                    $('.owl-carousel').owlCarousel({
+                         loop: true,
+                         margin: 10,
+                         nav: true,
+                         center: true,
+                         autoplay: true,
+                         autoplayTimeout: 3000,
+                         responsive: {
+                              0: {
+                                   items: 1
+                              },
+                              600: {
+                                   items: 1
+                              },
+                              1000: {
+                                   items: 1
+                              }
+                         }
+                    })
+               </script>
+
+               <!-- icon -->
+               <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>

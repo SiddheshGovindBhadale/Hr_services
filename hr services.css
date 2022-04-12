@@ -1,0 +1,205 @@
+:root {
+  --red:#db3951;
+  --blue:#00146c;
+  --orange:#f87d42;
+  --sky-blue:#c3f1ff;
+}
+
+a{
+  text-decoration:none;
+}
+
+.service .title , #teams .title , .testimonial .title{
+  margin: 2.5rem 0 4.37rem 0;
+  text-align: center;
+}
+
+.service .title h1 , #teams .title h1 , .testimonial .title h1{
+  font-size: 1.87rem;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+  font-weight: 500;
+}
+
+.service .title h1::after , #teams .title h1::after , .testimonial .title h1::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  transform: translate(-50%, -50%);
+  background-color: #bf263a;
+  width: 50%;
+  height: 0.25rem;
+  z-index: 1;
+} 
+
+
+
+#Hr-hero {
+  background-image:url("hr hero.jpg");
+  background-repeat-x:no-repeat;
+  background-repeat-y:no-repeat;
+  background-size:cover;
+  width:100%;
+  height:100vh;
+  flex-direction: column;
+  position:relative;
+}
+
+h1{
+  font-size:2.5rem;
+}
+
+.center{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+#Hr-hero  .Header {
+  width:100%;
+  height:100%;
+}
+
+#Hr-hero .curve  {
+  position:absolute;
+  width:100%;
+  bottom:0px;
+}
+
+#Hr-hero .Header  h4{
+  color:var(--blue);
+  font-family:Marriweathr,serif;
+  font-style:normal;
+  font-weight:500;
+  font-size:18px;
+  letter-spacing:1px;
+  margin:12px 0px;
+  text-transform:uppercase;
+}
+
+#Hr-hero  .Header h1{
+  color:var(--blue);
+  font-size:60px;
+  line-height:1.2;
+  margin:0px;
+  font-weight:700;
+}
+
+#Hr-hero .Header  p{
+  font-size:18px;
+  margin-bottom:47px;
+  margin-left:0px;
+  margin-right:0px;
+  margin-top:33px;
+  width:55%;
+}
+
+#Hr-hero .Header a{
+  color:rgb(39,158,100);
+  background:rgb(19,40,125);
+  color:#fff;
+  display:inline-block;
+  font-size:17px;
+  padding:17px 34px;
+  transition:all 0.5s ease 0s;
+}
+
+#Hr-hero .Header a:hover {
+  background-color:blue;
+}
+
+@media screen and (max-width: 720px){
+  #Hr-hero .Header  h4{
+    font-size:13px;
+  }
+  
+  #Hr-hero  .Header h1{
+    font-size:30px;
+  }
+  
+  #Hr-hero .Header  p{
+    font-size:13px;
+    width:100%;
+  }
+  
+  #Hr-hero .Header a{
+    font-size:13px;
+    padding:10px 20px;
+  }
+}
+
+#about .dreamit-about-thumb img{
+  position:relative;
+  width:100%;
+}
+
+#about .pt-95{
+  margin-top:95px;
+  margin-bottom:70px;
+}
+
+
+
+#about .about-counter-text-inner{
+  position:relative;
+  top:40%;
+  transform:translateY(-50%);
+  background:#fff;
+  border-bottom:10px solid var(--orange);
+  width:250px;
+  margin:auto;
+}
+
+#about .about-counter-text-inner h1{
+  color:var(--blue);
+  font-size:33px;
+  font-weight:600;
+}
+
+#about .about-counter-text-inner h3{
+  color:var(--blue);
+  font-size:20px;
+  font-weight:600;
+  margin:3px;
+  text-transform:capitalize;
+}
+
+#about .dreamit-section-sub-title h5{
+  color:var(--blue);
+  font-size:16px;
+  font-weight:700;
+  letter-spacing:5px;
+  margin-bottom:10px;
+  margin-left:0px;
+  margin-right:0px;
+  margin-top:30px;
+  text-transform:uppercase;
+}
+
+#about .dreamit-section-main-title h2,#about .dreamit-section-main-title h3{
+  font-size:23px;
+  font-weight:800;
+  line-height:1.2;
+  margin:0;
+  text-transform:capitalize;
+}
+
+#about .dreamit-section-main-title h2 span {
+  color:var(--blue);
+}
+
+#about .mt-15{
+  margin-top:15px;
+}
+
+#about p{
+  font-size:14px;
+}
+
+#about .about-icon img{
+  display:inline-block;
+  margin-right:18px;
+  height:33px;
+}

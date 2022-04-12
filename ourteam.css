@@ -1,0 +1,260 @@
+#teams {
+  background-color:#2c3c61;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+
+.team {
+  color: #fff;
+  background-color: none;
+  padding: 1rem;
+  padding-left:0px !important;
+  padding-right:0px !important;
+  text-align: center;
+  border-radius: 1rem;
+  transition: all 300ms ease-in-out;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.t{
+  width:27rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+  padding:17px 15px;
+  border-radius:10px;
+  background-color:#151A33;
+}
+
+#testimonial {
+  background: black;
+}
+
+.team .img-cover {
+  overflow: hidden;
+  height: 24rem;
+  width: 24rem;
+  margin: 0 0;
+  transition: all 300ms ease-in-out;
+  border-radius:5px;
+  position:relative;
+  
+}
+
+.team .img-cover img {
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top:0px;
+    z-index:0;
+    left:0px;
+}
+
+.team .profile{
+  height:0px;
+  width: 24rem;
+  transition: all .3s linear;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:absolute;
+  overflow:hidden;
+  z-index:1;
+  background:black;
+}
+
+.team .button {
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  border: 1px solid #bf263a;
+  background-color: #bf263a;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.team .button:hover{
+  background-color:transparent;
+}
+
+.team:hover .profile {
+  height:24rem;
+}
+
+.team h3{
+  margin-top:4px;
+}
+
+.team p{
+  font-size:1.2rem;
+  margin-bottom:0px;
+}
+ 
+
+#teams .glide__slide {
+  filter:blur(2px);
+  opacity:.7;
+  transition:all .3s ;
+}
+
+#teams .glide__slide--active{
+  opacity:1;
+  filter:none;
+  transform:scale(1.1);
+  transition: all .3s ;
+}
+
+#teams .glide__slides , #teams .glide__track {
+  overflow:visible !important;
+  width:100%;
+}
+
+.teamPortfolio-modal ul{
+      text-align:center;
+    }
+
+.teamPortfolio-modal .close-modal {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+.teamPortfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+
+.teamPortfolio-modal .about {
+  margin-top: 5rem;
+  display:flex;
+  align-item:center;
+  justify-contain:center;
+  flex-direction: column;
+}
+
+.teamPortfolio-modal .about-center {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem 5rem;
+  margin:auto !important;
+}
+
+.teamPortfolio-modal .about .title , .theme .title{
+  margin: 4rem 0 7rem 0;
+  text-align: center;
+}
+
+.teamPortfolio-modal .about .title h1 , .theme .title h1{
+  font-size: 3rem;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+
+.teamPortfolio-modal .about .title h1::after , .theme .title h1::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  transform: translate(-50%, -50%);
+  background-color: #bf263a;
+  width: 50%;
+  height: 0.4rem;
+  z-index: 1;
+}
+
+.teamPortfolio-modal .about .right h1 {
+  margin-bottom: 1rem;
+}
+
+.teamPortfolio-modal .about .right p {
+  line-height: 2;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.teamPortfolio-modal .about .right h1 span {
+  color: #bf263a;
+}
+
+.teamPortfolio-modal .about li{
+  margin-bottom:0px !important;
+}
+
+.teamPortfolio-modal a.mybtn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #bf263a;
+  color: #fff;
+  border-radius: 0.5rem;
+  border: 2px solid #bf263a;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease-in-out;
+}
+
+.teamPortfolio-modal a.btn:hover {
+  transform: translateY(-3px);
+  background-color: transparent;
+  color: inherit;
+}
+
+.teamPortfolio-modal a.btn:active {
+  transform: translateY(0px);
+}
+
+@media only screen and (max-width: 996px) {
+ .teamPortfolio-modal .about .right h1 {
+    font-size: 2rem;
+  }
+
+ .teamPortfolio-modal .about .right p {
+    font-size: 1.5rem;
+  }
+
+  .teamPortfolio-modal a.mybtn {
+    padding: 0.7rem 1.8rem;
+  }
+
+}
+
+@media only screen and (max-width: 758px) {
+ .teamPortfolio-modal .about-center {
+    grid-template-columns: 1fr;
+    gap: 3rem 0rem;
+    
+  }
+
+  .teamPortfolio-modal .about .left {
+    text-align: center;
+    margin-top:20px;
+  }
+
+  .teamPortfolio-modal .about ul{
+      text-align: center;
+    margin-top:20px;
+  }
+
+  
+}
+
+
+@media(min-width: 576px) {
+    .teamPortfolio-modal .modal-dialog{
+	  max-width: 95vw !important;
+    }
+    
+    .teamPortfolio-modal ul{
+      text-align:left;
+    }
+}
+
+.container {
+  overflow:visible;
+  margin:auto !important;
+}
